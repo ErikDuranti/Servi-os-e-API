@@ -1,14 +1,14 @@
 {
   "name": "teste-bcrypt",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Erik Duranti",
   "license": "ISC",
-  "description": "",
+  "description": "Meu primeiro projeto em JS",
   "dependencies": {
     "bcrypt": "^6.0.0"
   }
