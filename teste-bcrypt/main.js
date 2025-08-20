@@ -1,6 +1,11 @@
 const bcrypt = require('bcrypt');
+const prompt = require('prompt-sync')();
 
-let texto = "Hello World";
-textoHash = bcrypt.hashSync(texto, 12);
+let texto = prompt("Palavra a ser Criptografada: ");
+textoHash = bcrypt.hashSync(texto, 10);
 console.log(textoHash);
-console.log(texto);
+
+let textoTeste = prompt("Texto para validar a palavra: ");
+
+console.log("Validando Texto: ", bcrypt.compareSync(textoTeste, textoHash));
+console.log("Valudando 'Hello': ", bcrypt.compareSync("Hello", textoHash));
